@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinkao Restaurant Service Website</title>
+    <!-- tell thymeleaf that we're gonna use bootstrap css -->
+    <link th:rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <srcipt th:src="@{/js/bootstrap.min.js}"></srcipt>
+</head>
+<body>
+<div th:insert="fragments/header :: header"></div>
+<div class="container">
+    <h1 class="display-6">Welcome to Kinkao Restaurant Service Website, Let we cook you!</h1>
+    <!-- tell thymeleaf that this <p> element displays a greeting variable -->
+    <p th:text="${greeting}"></p>
+</div>
+
+</body>
+</html>
