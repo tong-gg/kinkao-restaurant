@@ -12,7 +12,7 @@
 <div class="container">
     <h1 class="display-6">Welcome to Kinkao Restaurant Service Website, Let we cook you!</h1>
     <!-- tell thymeleaf that this <p> element displays a greeting variable -->
-    <p th:text="${greeting}"></p>
+    <p th:text="| ${greeting}, Khun ${user} |"></p>
 </div>
 
 </body>
